@@ -1,0 +1,558 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>HTML Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      margin: 0;
+      padding: 0;
+      line-height: 100%;
+    }
+
+    [style*="Open Sans"] {
+      font-family: 'Open Sans', arial, sans-serif !important;
+    }
+
+    img {
+      outline: none;
+      text-decoration: none;
+      border: none;
+      -ms-interpolation-mode: bicubic;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    table {
+      border-collapse: collapse;
+      mso-table-lspace: 0pt;
+      mso-table-rspace: 0pt;
+    }
+
+    .mini-block {
+      margin: 0;
+      padding-top: 21px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .logo {
+      display: block !important;
+      padding-top: 30px;
+      padding-bottom: 28px;
+      width: 187px;
+      height: 42px;
+    }
+
+    .logo-small {
+      display: none !important;
+    }
+
+    .title {
+      margin: 0;
+      padding-top: 32px;
+      padding-bottom: 13px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .title-block-grey {
+      margin: 0;
+      padding-top: 13px;
+      padding-bottom: 11px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .mini-title {
+      margin: 0;
+      padding-bottom: 8px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .description {
+      margin: 0;
+      padding-bottom: 13px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      color: #515151;
+    }
+
+    .descr {
+      margin: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #ffffff;
+    }
+
+    .pb-21 {
+      padding-bottom: 21px;
+    }
+
+    .pb-26 {
+      padding-bottom: 26px;
+    }
+
+    .pb-32 {
+      padding-bottom: 32px;
+    }
+
+    .pb-34 {
+      padding-bottom: 34px;
+    }
+
+    .block-td {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    .title-block-white {
+      margin: 0;
+      padding-top: 26px;
+      padding-bottom: 21px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .block-info {
+      padding-right: 27px;
+    }
+
+    .block-info img {
+      padding-bottom: 11px;
+    }
+
+    .block-info p {
+      margin: 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      color: #515151;
+    }
+
+    .button {
+			text-align: center;
+			border-radius: 48px;
+			background-color: #9D5CD0;
+			width: 240px;
+			height: 45px;
+			text-align: center;
+    }
+
+    .button a {
+      padding-top: 17px;
+      padding-bottom: 17px;
+      font-style: normal;
+			font-weight: Bold;
+			font-size: 14px;
+			color: #ffffff;
+			line-height: 18px;
+			text-decoration: none;
+		}
+
+    .social {
+      margin: 0;
+      padding-top: 27px;
+      padding-bottom: 12px;
+    }
+
+    .littel-text {
+      margin: 0;
+      padding-bottom: 16px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 24px;
+      color: #757575;
+    }
+
+    .link {
+      margin: 0;
+      padding-top: 5px;
+      padding-bottom: 7px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 24px;
+    }
+
+    .link p {
+      margin: 0;
+      color: #757575;
+    }
+
+    .link a {
+      margin: 0;
+      color: #9D5CD0;
+    }
+
+    .picture {
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .picture-small {
+      display: none !important;
+    }
+
+
+    @media (max-width: 620px) {
+		.table-600 {
+			width: 280px !important;
+		}
+
+    .logo {
+      display: none !important;
+
+    }
+
+    .logo-small {
+      display: block !important;
+      padding-top: 17px;
+      padding-bottom: 17px;
+      width: 114px;
+      height: 25px;
+    }
+
+    .picture {
+      display: none !important;
+    }
+
+    .picture-small {
+      display: block !important;
+      width: 100% !important;
+    }
+
+
+    .block-td {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+
+    .block-info {
+      padding-right: 0;
+      padding-bottom: 11px;
+    }
+
+      .table-300 td {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+  <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+    письмо</div>
+  <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
+    <tr>
+      <td>
+        <table cellpadding="0" cellspacing="0" class="table-600" width="600" align="center">
+
+            <tr>
+              <td align="center" width="100%" class="table-600"  bgcolor="#000000">
+                <img class="logo"
+                  src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/cbc544ee31babae370da6a1caa67767fab9f8ab1/%D0%9B%D0%BE%D0%B3%D0%BE-1.png"
+                  alt="Логотип" />
+                <img class="logo-small"
+                  src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/cbc544ee31babae370da6a1caa67767fab9f8ab1/%D0%9B%D0%BE%D0%B3%D0%BE-2.png"
+                  alt="Логотип" />
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center">
+                <img class="picture" src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/main/hero.jpg"
+                  alt="Изображение" />
+                  <img class="picture-small" src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/main/hero-small.png"
+                  alt="Изображение" />
+              </td>
+            </tr>
+
+          <table cellpadding="0" cellspacing="0" class="table-600" width="600" align="center" bgcolor="#ffffff">
+            <tr>
+              <td align="left">
+                <h1 class="title block-td" style="font-family: 'Open Sans', arial, sans-serif;">Торжество импрессионизма</h1>
+              </td>
+            </tr>
+            <tr>
+              <td align="left">
+                <p class="description block-td" style="font-family: 'Open Sans', arial, sans-serif;">
+                  Опыт говорит нам, что семантический разбор внешних противодействий требует анализа новых принципов
+                  формирования материально-технической и кадровой базы. <br/>
+                  Задача организации, в особенности же внедрение современных методик, в своём классическом
+                  представлении, допускает внедрение глубокомысленных рассуждений. Есть над чем задуматься: элементы
+                  политического процесса преданы социально-демократической анафеме! Но интерактивные прототипы
+                  заблокированы в рамках своих собственных рациональных ограничений. Сторонники тоталитаризма в науке
+                  ограничены исключительно образом мышления.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <table cellpadding="0" cellspacing="0" class="table-600" width="600" bgcolor="#000000" align="center">
+            <tr>
+              <td>
+                <tr>
+                  <td align="left" class="block-td">
+                    <h2 class="title-block-white " style="font-family: 'Open Sans', arial, sans-serif;">Представленные
+                      художники
+                    </h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+
+                      <tr>
+                        <td>
+                          <table class="mini-block" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td class="block-td pb-21" align="center">
+                                <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/main/pic-1.jpg"
+                                  alt="Картина Гогена" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="block-td">
+                                <h3 class="mini-title" style="font-family: 'Open Sans', arial, sans-serif;">Поль Гоген</h3>
+                                <p class="descr pb-21" style="font-family: 'Open Sans', arial, sans-serif;">Прежде всего, разбавленное
+                                  изрядной долей эмпатии, рациональное мышление в значительной степени обусловливает важность
+                                  укрепления моральных ценностей.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <table class="mini-block" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td class="block-td pb-21" align="center">
+                                <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/main/pic-2.jpg"
+                                  alt="Картина Ренуара" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="block-td">
+                                <h3 class="mini-title" style="font-family: 'Open Sans', arial, sans-serif;">Огюст Ренуар</h3>
+                                <p class="descr pb-21" style="font-family: 'Open Sans', arial, sans-serif;">А также сделанные на базе
+                                  интернет-аналитики выводы освещают чрезвычайно интересные особенности картины в целом.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <table class="mini-block" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td class="block-td pb-21" align="center">
+                                <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/main/pic-3.jpg"
+                                  alt="Картина Моне" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="block-td">
+                                <h3 class="mini-title" style="font-family: 'Open Sans', arial, sans-serif;">Клод Моне</h3>
+                                <p class="descr pb-21" style="font-family: 'Open Sans', arial, sans-serif;">Современная методология
+                                  разработки однозначно фиксирует необходимость системы массового участия.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <table class="mini-block" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td class="block-td pb-21" align="center">
+                                <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/main/pic-4.jpg"
+                                  alt="Картина Мане" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="block-td">
+                                <h3 class="mini-title" style="font-family: 'Open Sans', arial, sans-serif;">Эдуард Мане</h3>
+                                <p class="descr pb-21" style="font-family: 'Open Sans', arial, sans-serif;">Но социально-экономическое
+                                  развитие является качественно новой ступенью вывода текущих активов.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <table class="mini-block" cellpadding="0" cellspacing="0" align="center">
+                            <tr>
+                              <td class="block-td pb-21" align="center">
+                                <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/main/pic-5.png"
+                                  alt="Картина Ван Гога" />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="block-td">
+                                <h3 class="mini-title" style="font-family: 'Open Sans', arial, sans-serif;">Винсент Ван Гог</h3>
+                                <p class="descr pb-26" style="font-family: 'Open Sans', arial, sans-serif;">Повседневная практика
+                                  показывает, что разбавленное изрядной долей эмпатии, рациональное мышление требует анализа
+                                  поставленных обществом задач.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+
+                  </td>
+                </tr>
+             </td>
+            </tr>
+         </table>
+
+          <table cellpadding="0" cellspacing="0" class="table-600  " width="600" bgcolor="#ffffff" align="center">
+            <tr>
+              <td >
+                <tr>
+                  <td align="left" class="block-td">
+                    <h2 class="title-block-grey" style="font-family: 'Open Sans', arial, sans-serif;"> И это ещё не всё!</h2>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="pb-34 block-td table-300">
+                    <table  cellpadding="0" cellspacing="0"  align="center">
+                      <tr>
+
+                          <td align="left" >
+                            <td align="left" class="block-info">
+                              <img
+                                src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/d38bc7abee7632b893d875f41d2c2cf3678f8e4e/check-square.png"
+                                alt="заметки"/>
+                              <p  style="font-family: 'Open Sans', arial, sans-serif;">Уникальные подборки работ с авторскими рецензиями</p>
+                            </td>
+                          </td>
+
+                          <td align="center" >
+                          <td align="left" class="block-info">
+                            <img
+                              src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/d38bc7abee7632b893d875f41d2c2cf3678f8e4e/calendar.png"
+                              alt="календарь" />
+                            <p  style="font-family: 'Open Sans', arial, sans-serif;">Возможность настроить нашу рассылку под свой личный вкус</p>
+                          </td>
+                          </td>
+
+                          <td align="right">
+                          <td align="left" class="block-info">
+                            <img
+                              src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/d38bc7abee7632b893d875f41d2c2cf3678f8e4e/arrow-up-circle.png"
+                              alt="обратная связь" />
+                            <p  style="font-family: 'Open Sans', arial, sans-serif;">У вас есть пожелания и предложения?
+                              Напишите нам в ответ на это письмо!</p>
+                          </td>
+                          </td>
+                      </tr>
+                    </table>
+
+                    <tr>
+                      <td align="center" class="pb-32">
+                        <table cellpadding="0" cellspacing="0">
+
+                          <tr>
+                            <td align="center" class="button">
+                              <a href="#" style="font-family: 'Open Sans', arial, sans-serif;">Узнать все подробности</a>
+                            </td>
+                          </tr>
+
+                        </table>
+                      </td>
+                    </tr>
+
+                  </td>
+                </tr>
+              </td>
+            </tr>
+          </table>
+
+          <tr>
+            <td>
+              <table class="table-600" cellpadding="0" cellspacing="0" width="600" bgcolor="#000000" align="center">
+                <tr>
+                  <td align="center" class="social">
+                  <table  cellpadding="0" cellspacing="0" align="center" width="143">
+                    <tr>
+                    <td align="center">
+                      <a href="#">
+                      <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/cbc544ee31babae370da6a1caa67767fab9f8ab1/vk.png" alt="вк"/>
+                      </a>
+                    </td>
+                    <td align="center">
+                      <a href="#">
+                        <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/d38bc7abee7632b893d875f41d2c2cf3678f8e4e/instagram.png" alt="инст"/>
+                      </a>
+                    </td>
+                    <td align="center">
+                      <a href="#">
+                        <img src="https://raw.githubusercontent.com/AnnushkaVeselova/picture_skillbox/d38bc7abee7632b893d875f41d2c2cf3678f8e4e/fb.png" alt="фейс"/>
+                      </a>
+                    </td>
+                  </tr>
+                  </table>
+                 </td>
+                </tr>
+
+                <tr>
+                  <td align="center" >
+                    <p class="littel-text" style="font-family: 'Open Sans', arial, sans-serif;">Blanchard © 2020 / Все права защищены</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="link" align="center" bgcolor="#EBEBEB">
+                <p class="" style="font-family: 'Open Sans', arial, sans-serif;">Вы можете так же
+                <a href="#" class="" style="font-family: 'Open Sans', arial, sans-serif;">отписаться от рассылки</a></p>
+            </td>
+          </tr>
+       </table>
+     </td>
+   </tr>
+  </table>
+</body>
+
+</html>
